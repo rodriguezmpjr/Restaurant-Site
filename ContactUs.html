@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+            br {
+                line-height: 200%;
+            }
+            div.form
+            {
+                display: block;
+                text-align: center;
+            }
+            form
+            {
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+        </style>
+
+    </head>
+    <body>
+        <center><h1>Mac's</h1></center>
+        </br>
+        <hr>
+        </br>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="ContactUs.html">Contact Us</a></br>
+        <hr>
+        <div class="form">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td align="right"><label id="NameLable" for="Name">Name: </label></td>
+                        <td align="center"><input id="Name" name="Name" type="text" /></td>
+                    </tr></br>               
+                    <tr>                
+                        <td align="right"><label id="EmailLabel" for="Email">Email: </label></td>
+                        <td align="center"><input id="Email" name="Email" type="text" /></td>
+                    </tr></br>               
+                    <tr>
+                        <td align="right"><label id="PhoneLabel" for="Phone">Phone: </label></td>
+                        <td align="center"><input id="Phone" name="Phone" type="text" /></td>
+                    </tr></br>
+                                        <tr>           
+                        <td align="right"><label for="myDropDown" datalabel="myDropDown">Reason for inquiry: </label></td>
+                        <td align="center"><select name="myDropDown" id="myDropDown">                    
+                            <option value="Catering" selected>Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select></td></br>
+                    </tr>
+                    <tr>            
+                        <td align="right"><label id="infoLabel" for="addInfo">Additional Information: </label></td>
+                        <td align="center"><textarea id="addInfo" name="addInfo"></textarea></td>
+                    </tr>
+                    <tr>            
+                            <td align="right"><label id="radioButton" for="Dined">Have you been to the restaurant? </label></td>
+                            <td align="center"><input type="radio" name="answer" value="No" checked/>No
+                            <input type="radio" name="answer" value="Yes" />Yes</td></br>
+                    </tr>
+                    <tr>
+                        <td align="right">Best days to contact you:</td>
+                        <td align="right"><input type="checkbox" name="bestDay" value="Monday"/>Monday
+                            <input type="checkbox" name="bestDay" value="Tuesday"/>Tuesday
+                            <input type="checkbox" name="bestDay" value="Wednesday"/>Wednesday
+                            <input type="checkbox" name="bestDay" value="Thursday"/>Thursday
+                            <input type="checkbox" name="bestDay" value="Friday"/>Friday
+                        </td>
+                    </tr>          
+                    <tr>
+                        <td></td>
+                        <td align="right"><button name="button">Send Request</button></td>
+                    </tr>
+                
+                </table>
+                
+                
+            </form>
+        </div>
+    
+        
+
+
+
+
+
+
+        <div class="footer">
+            <hr>
+            <p>1234 First St., Anywhere, TN, 12345 </br>555-987-6543</p>
+        </div>     
+
+    </body>
+</html>
