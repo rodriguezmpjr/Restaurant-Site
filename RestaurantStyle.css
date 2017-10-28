@@ -7,4 +7,14 @@
 }
 .header {
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+th {
+    font-size: 150%;
+}
+.menuBody, .indexBody {
+    background-color: rgba(228, 253, 104, 0.3);
+}
+#NameLabel, #EmailLabel, #PhoneLabel, #ReasonLabel, #infoLabel, #radioButton, #bestDay {
+    font-weight: bold;
 }
