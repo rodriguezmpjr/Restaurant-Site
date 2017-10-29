@@ -18,3 +18,33 @@ th {
 #NameLabel, #EmailLabel, #PhoneLabel, #ReasonLabel, #infoLabel, #radioButton, #bestDay {
     font-weight: bold;
 }
+/*table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}*/
+td {
+    text-align: center;
+}
+a:visited {
+    color: Red;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+}
+.beverages {
+    text-align: left;
+}
+.beveragePrice {
+    text-align: right;
+}
+.beveragesHeader {
+    /*border-bottom: solid 1px*/
+    text-align: left;
+    text-decoration: underline;
+}
+.contactLabels {
+    text-align: right;
+}
