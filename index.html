@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>Mac's</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link href="RestaurantStyle.css" 
             rel="stylesheet" 
             type="text/css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet" 
+        type="text/css" />
         <style>
             #restDescription {
                 width: 400px;
@@ -19,30 +23,33 @@
         </style>
     </head>
     <body>
-        <div class="header">
-            <h1>Mac's</h1>
-            </br>
-            <hr>
-            </br>
-        </div>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="ContactUs.html">Contact Us</a></br></br>
-        <hr>
-        <div class="indexBody">
-            <div style="text-align: center;">
-                <img src="images/Macs_pic.jpg" alt="Mac's" style="height: 150px; width: 400px;">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="header">
+                    <h1>Mac's</h1> 
+                    <h2 id="newLocation">New Franklin location opening in January 2018!</h2>        
+                </div>                
             </div>
-            <div id="restDescription" style="border:1px solid black" width:"400">
-                <center><p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum
-                </p></center>
-            </div>        
-            <div class="footer">
+                <ul class="nav nav-pills">
+                    <li><a class="fa fa-home" aria-hidden="true" href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></br></br></li>
+                </ul>
                 <hr>
-                <p>1234 First St., Anywhere, TN, 12345 </br>555-987-6543</p>
+                <div class="indexBody">
+                    <div style="text-align: center;">
+                        <img src="images/Macs_pic.jpg" alt="Mac's" style="height: 150px; width: 400px;">
+                    </div>
+                    <div id="restDescription" style="border:1px solid black" width:"400">
+                        <center><p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quasi cum tenetur maiores, perferendis aut repellendus deleniti facere? Vel neque qui, ut iste laborum facilis provident corrupti quas lorem ipsum
+                        </p></center>
+                    </div>        
+                    <div class="footer">
+                        <hr>
+                        <p>1234 First St., Anywhere, TN, 12345 </br>555-987-6543</p>
+                    </div>
+                </div>
             </div>
-        </div>       
-
-    </body>
+        </body>
 </html>

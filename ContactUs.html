@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link href="RestaurantStyle.css" 
-            rel="stylesheet" 
-            type="text/css" />
+              rel="stylesheet" 
+              type="text/css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+              rel="stylesheet" 
+              type="text/css" />
         <style>
             br {
                 line-height: 200%;
@@ -25,80 +29,72 @@
 
     </head>
     <body>
-        <div class="header">
-            <h1>Mac's</h1>
-            </br>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="header">
+                    <h1>Mac's</h1>
+                    <h2 id="newLocation">New Franklin location opening in January 2018!</h2> 
+                </div>
+            </div>
+            <ul class="nav nav-pills">
+                <li><a class="fa fa-home" aria-hidden="true" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></br></li>
+            </ul>
             <hr>
-            </br>
+            <div class="form">
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td class="contactLabels"><label id="NameLabel" for="Name">Name: </label></td>
+                            <td><input id="Name" name="Name" type="text" /></td>
+                        </tr></br>               
+                        <tr>                
+                            <td class="contactLabels"><label id="EmailLabel" for="Email">Email: </label></td>
+                            <td><input id="Email" name="Email" type="text" /></td>
+                        </tr></br>               
+                        <tr>
+                            <td class="contactLabels"><label id="PhoneLabel" for="Phone">Phone: </label></td>
+                            <td><input id="Phone" name="Phone" type="text" /></td>
+                        </tr></br>
+                        <tr>           
+                            <td class="contactLabels"><label id="ReasonLabel" for="myDropDown" datalabel="myDropDown">Reason for inquiry: </label></td>
+                            <td><select name="myDropDown" id="myDropDown">                    
+                                <option value="Catering" selected>Catering</option>
+                                <option value="Private Party">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select></td></br>
+                        </tr>
+                        <tr>            
+                            <td class="contactLabels"><label id="infoLabel" for="addInfo">Additional Information: </label></td>
+                            <td><textarea id="addInfo" name="addInfo"></textarea></td>
+                        </tr>
+                        <tr>            
+                                <td class="contactLabels"><label id="radioButton" for="Dined">Have you been to the restaurant? </label></td>
+                                <td><input type="radio" name="answer" value="No" checked/>No
+                                <input type="radio" name="answer" value="Yes" />Yes</td></br>
+                        </tr>
+                        <tr>
+                            <td class="contactLabels"><label id="bestDay">Best days to contact you:</label></td>
+                            <td align="right"><input type="checkbox" name="bestDay" value="Monday"/>M
+                                <input type="checkbox" name="bestDay" value="Tuesday"/>T
+                                <input type="checkbox" name="bestDay" value="Wednesday"/>W
+                                <input type="checkbox" name="bestDay" value="Thursday"/>Th
+                                <input type="checkbox" name="bestDay" value="Friday"/>F
+                            </td>
+                        </tr>          
+                        <tr>
+                            <td></td>
+                            <td align="center"><button name="button">Send Request</button></td>
+                        </tr>                    
+                    </table>                 
+                </form>
+            </div>
+            <div class="footer">
+                <hr>
+                <p>1234 First St., Anywhere, TN, 12345 </br>555-987-6543</p>
+            </div>     
         </div>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="ContactUs.html">Contact Us</a></br></br>
-        <hr>
-        <div class="form">
-            <form action="#" method="post">
-                <table>
-                    <tr>
-                        <td class="contactLabels"><label id="NameLabel" for="Name">Name: </label></td>
-                        <td><input id="Name" name="Name" type="text" /></td>
-                    </tr></br>               
-                    <tr>                
-                        <td class="contactLabels"><label id="EmailLabel" for="Email">Email: </label></td>
-                        <td><input id="Email" name="Email" type="text" /></td>
-                    </tr></br>               
-                    <tr>
-                        <td class="contactLabels"><label id="PhoneLabel" for="Phone">Phone: </label></td>
-                        <td><input id="Phone" name="Phone" type="text" /></td>
-                    </tr></br>
-                    <tr>           
-                        <td class="contactLabels"><label id="ReasonLabel" for="myDropDown" datalabel="myDropDown">Reason for inquiry: </label></td>
-                        <td><select name="myDropDown" id="myDropDown">                    
-                            <option value="Catering" selected>Catering</option>
-                            <option value="Private Party">Private Party</option>
-                            <option value="Feedback">Feedback</option>
-                            <option value="Other">Other</option>
-                        </select></td></br>
-                    </tr>
-                    <tr>            
-                        <td class="contactLabels"><label id="infoLabel" for="addInfo">Additional Information: </label></td>
-                        <td><textarea id="addInfo" name="addInfo"></textarea></td>
-                    </tr>
-                    <tr>            
-                            <td class="contactLabels"><label id="radioButton" for="Dined">Have you been to the restaurant? </label></td>
-                            <td><input type="radio" name="answer" value="No" checked/>No
-                            <input type="radio" name="answer" value="Yes" />Yes</td></br>
-                    </tr>
-                    <tr>
-                        <td class="contactLabels"><label id="bestDay">Best days to contact you:</label></td>
-                        <td align="right"><input type="checkbox" name="bestDay" value="Monday"/>M
-                            <input type="checkbox" name="bestDay" value="Tuesday"/>T
-                            <input type="checkbox" name="bestDay" value="Wednesday"/>W
-                            <input type="checkbox" name="bestDay" value="Thursday"/>Th
-                            <input type="checkbox" name="bestDay" value="Friday"/>F
-                        </td>
-                    </tr>          
-                    <tr>
-                        <td></td>
-                        <td align="center"><button name="button">Send Request</button></td>
-                    </tr>
-                
-                </table>
-                
-                
-            </form>
-        </div>
-    
-        
-
-
-
-
-
-
-        <div class="footer">
-            <hr>
-            <p>1234 First St., Anywhere, TN, 12345 </br>555-987-6543</p>
-        </div>     
-
     </body>
 </html>
