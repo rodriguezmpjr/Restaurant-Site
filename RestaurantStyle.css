@@ -11,6 +11,7 @@
 }
 #newLocation {
     color: red;
+    text-align: center;
 }
 th {
     font-size: 150%;
@@ -56,6 +57,6 @@ a:active {
 .nav-pills a {
     background-color: #D6D6D6;
 }
-.form {
-    padding-top: 0;
+.macsHeader {
+    text-align: center;
 }
